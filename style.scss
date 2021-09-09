@@ -25,6 +25,11 @@ $cBlack: black;
         //視点の角度を変化する(正面は-50% -50%)
         // perspective-origin: -50% -50%;
         
+        & span {  
+            display: inline-block;  
+            transform: translateZ(20px);
+
+        }
         &::before {
           content: '';
            display: inline-block;
@@ -39,7 +44,7 @@ $cBlack: black;
            transition: all 0.3s;
            //btnの上の辺からアニメーション
            transform-origin: top center;
-           z-index: -1;
+           //z-index: -1;
            //非ホバー時に非表示
            opacity: 0;
         }
